@@ -9,7 +9,7 @@ double_count = 0
 default_dict = collections.defaultdict(int)
 
 # create id list
-with open("Files/test_input_day2-1.txt") as input_file:
+with open("Files/input.txt") as input_file:
     for line in input_file:
         if line.endswith("\n"):
             input_ids_list.append(line.rstrip("\n"))
@@ -27,7 +27,6 @@ for id in input_ids_list:
 
 for id in input_ids_list:
     default_dict.clear()  # clear dict each pass through
-    print(id)
 
     for letter in id:  # get recurrence count of each letter
         default_dict[letter] += 1
@@ -35,7 +34,6 @@ for id in input_ids_list:
     # loop through the default dict and count values that are 2 or greater
     # and set associated dict value to True
     for value in sorted(default_dict, key=default_dict.get, reverse=True):
-        print(default_dict[value])
         if default_dict[value] >= 3:
             ids_3peat_dict[id] = True
         elif default_dict[value] == 2:

@@ -22,9 +22,6 @@ for id in input_ids_list:
     ids_2peat_dict.update({id: False})
     ids_3peat_dict.update({id: False})
 
-# print(ids_2peat_dict)
-# print(ids_3peat_dict)
-
 for id in input_ids_list:
     default_dict.clear()  # clear dict each pass through
 

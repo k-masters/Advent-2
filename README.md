@@ -31,6 +31,7 @@ Of these box IDs, four of them contain a letter which appears exactly twice, and
 What is the checksum for your list of box IDs?
 
 **Dec 2 2018 Part 2**
+
 **--- Part Two ---**
 
 Confident that your list of box IDs is complete, you're ready to find the boxes full of prototype fabric.
